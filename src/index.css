@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0a0a0f;
+    color: #e2e8f0;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+/* Sharp, solid technical card & panel utilities — ZERO blur */
+.camp-panel {
+  background-color: #11121a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.camp-panel-lime {
+  background-color: #11121a;
+  border: 1px solid rgba(200, 255, 0, 0.35);
+  box-shadow: 0 0 25px -5px rgba(200, 255, 0, 0.15);
+}
+
+.camp-card {
+  background-color: #13141f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.camp-card:hover {
+  border-color: #C8FF00;
+  box-shadow: 0 0 25px -4px rgba(200, 255, 0, 0.35);
+}
+
+.glow-btn {
+  background-color: #C8FF00;
+  color: #000000;
+  font-weight: 900;
+  transition: all 0.2s ease;
+}
+
+.glow-btn:hover {
+  background-color: #b5e600;
+  box-shadow: 0 0 30px 2px rgba(200, 255, 0, 0.6);
+}
+
+/* Custom crisp scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+::-webkit-scrollbar-thumb {
+  background: #232536;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C8FF00;
+}
+
+/* Cinema perspective & curved screen (Shadows only, ZERO blur) */
+.cinema-perspective {
+  perspective: 1000px;
+}
+
+.screen-curve {
+  transform: rotateX(-15deg);
+  box-shadow: 0 16px 35px -5px rgba(200, 255, 0, 0.5);
+}
